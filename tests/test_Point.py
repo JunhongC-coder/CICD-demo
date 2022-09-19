@@ -1,5 +1,5 @@
 import pytest
-from Point import Point
+from Point import*
 
 class TestPointT:
     @classmethod

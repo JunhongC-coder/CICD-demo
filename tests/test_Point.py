@@ -35,7 +35,6 @@ class TestPointT:
         pointNew = self.pointA.addPoint(self.pointB)
         assert pointNew.getX() == -2
         assert pointNew.getY() == 9
-        assert 1==2
     def testBug(self):
-        assert 1==2
+        assert 1==1
     

@@ -17,3 +17,5 @@ class Point:
 
     def addPoint(self,pt):
         return Point(self.x + pt.getX(), self.y + pt.getY())
+    def flip(self) -> int:
+        return Point(self.y,self.x)

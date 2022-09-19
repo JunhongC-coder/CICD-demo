@@ -1,11 +1,12 @@
 import pytest
-from Point import*
+from Point import Point
 
 class TestPointT:
     @classmethod
     def setup_class(self):
         self.pointA = Point(2,3)
         self.pointB = Point(-4,6)
+        self.pointC = Point(2,3)
 
     def testGetX(self):
         assert self.pointA.getX() == 2
@@ -35,5 +36,10 @@ class TestPointT:
         pointNew = self.pointA.addPoint(self.pointB)
         assert pointNew.getX() == -2
         assert pointNew.getY() == 9
+
+    def testFlip(self):
+        pointNew = self.pointC.flip()
+        assert pointNew.getX()==3
+        assert pointNew.getY()==2
 
     

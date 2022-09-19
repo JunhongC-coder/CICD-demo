@@ -41,5 +41,6 @@ class TestPointT:
         pointNew = self.pointC.flip()
         assert pointNew.getX()==3
         assert pointNew.getY()==2
+        assert 1==1
 
     
